@@ -1,30 +1,22 @@
-# Archivos de caché de Python
-__pycache__/
-*.py[cod]
-*.pyo
+# Evitar caché de la API
+.cache.sqlite
 
-# Archivos temporales de sistemas
+# Evitar archivos y carpetas temporales
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.swp
 .DS_Store
 Thumbs.db
 
-# Archivos de configuración de entorno
+# Archivos de entorno virtual (si llegas a usar uno)
 .env
+.venv/
+env/
+venv/
 
-# Bases de datos locales
-*.sqlite
-*.db
-.cache/
-.cache.sqlite
-
-# Archivos de salida
-*.png
-*.pdf
-
-# Archivos creados por Jupyter o IPython
-.ipynb_checkpoints/
-
-# Archivos exportados por VSCode
-.vscode/
-
-# Archivos del sistema operativo
-*.swp
+# No ignorar imágenes (asegura que sí se suban)
+!*.png
